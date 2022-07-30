@@ -1,0 +1,23 @@
+th,
+td {
+  padding: 15px;
+}
+
+body {
+  background-color: rgb(23, 26, 26);
+}
+
+h1 {
+  color: blue;
+}
+
+th {
+  color: rgb(255, 255, 255);
+}
+
+p {
+  text-shadow: red;
+  text-shadow: 1cm;
+  text-shadow: transparent;
+  color: rgb(201, 201, 201);
+}
