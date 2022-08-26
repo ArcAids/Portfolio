@@ -304,7 +304,7 @@ if (repetition > 0) {
 ```
 
 <center>
-<img width="400" src="Fireworks.png"></img>
+<img width="400" src="FireWorksv3_c.gif"></img>
 </center>
 
 > I know it looks random but I'll leave making it look pretty to designers, spent too much time on it already.
@@ -410,3 +410,11 @@ Although it's just a simple system I did learn a lot about planning, architectur
 ## **Final words**
 There's still so much I could have improved and added but it was a great experience anyways. With this new insight in particle System I think I'm ready to deal with Compute shader magic to render millions of particles!
 In future I won't keep the research topic to be this vast and keep it targeted at a specific topic which I could go in detail instead. But I'm happy I made this all in time and it's time to move on to next research and keep learning.
+
+---
+
+<center>
+<img width="500" src="ParticlesBlastWaves.gif"></img>
+</center>
+
+---
