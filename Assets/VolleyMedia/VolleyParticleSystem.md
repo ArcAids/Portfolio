@@ -44,11 +44,6 @@ __Shared attributes__
 |dampening| dampening factor dampens the movement of particle. 1 means no dampening.|
 | spawner | spawner object takes care of spawning particles. if it's BurstSpawner object, it will spawn a fixed amount of particles at fixed interval. or you can just manually spawn!|
 
-</br>
-</br>
-</br>
-</br>
-
 __Unique attributes:__ 
 |Attribute | Description|
 | -- | --|
@@ -113,22 +108,6 @@ So just like that, we can control particles from the controller. there are more 
 
 ---
 
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-
 ### **2. Update Loop**
 
 `VolleySystem` class holds a list of all the `ParticleController` to Update, Draw and Clean up itself. Update happens in 3 parts:
@@ -153,15 +132,6 @@ Rendering all particles is literally sending data over to GPU before drawing eac
 For user, Draw is not a concern and can be ignored completely.
 
 ---
-
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
 
 ## **Deep Dive**
 Now we have some understanding of what it is so lets jump into the deep end and see what's happening behind the scene.
@@ -244,11 +214,6 @@ This explains the whole Draw cycle logic very neatly. Let me just reveal the `Se
 <img width="400" src="DeathCube.gif"></img>
 </center>
 > That was a lot of code, have this companion cube for support. please take care of it.
-
-</br>
-</br>
-</br>
-</br>
 
 ### **Maths Utilities**
 I added strategy classes for both float and Vect class so they could be swapped for different implementations like `VVect` is just a vector of 4 floats while `VRangedVect` holds 2 more `Vect` for minimum and maximum range which can be interpolated from min to max, randomized between range and so on.
@@ -339,7 +304,7 @@ if (repetition > 0) {
 ```
 
 <center>
-<img width="400" src="Fireworks.png"></img>
+<img width="400" src="FireWorksv3_c.gif"></img>
 </center>
 
 > I know it looks random but I'll leave making it look pretty to designers, spent too much time on it already.
@@ -445,3 +410,11 @@ Although it's just a simple system I did learn a lot about planning, architectur
 ## **Final words**
 There's still so much I could have improved and added but it was a great experience anyways. With this new insight in particle System I think I'm ready to deal with Compute shader magic to render millions of particles!
 In future I won't keep the research topic to be this vast and keep it targeted at a specific topic which I could go in detail instead. But I'm happy I made this all in time and it's time to move on to next research and keep learning.
+
+---
+
+<center>
+<img width="500" src="ParticlesBlastWaves.gif"></img>
+</center>
+
+---
