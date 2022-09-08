@@ -9,37 +9,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+ 
+h3 {
+    text-decoration: underline;
+    
+}
 body, html {
   height: 100%;
   color: #0af;
   background-color: #010110;
   line-height: 1.8;
-}
-
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('/w3images/parallax1.jpg');
-  min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("/w3images/parallax2.jpg");
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("/Assets/MouseyComingForYa.gif");
-  min-height: 400px;
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -53,17 +32,12 @@ body, html {
   }
 }
     
-.fa-itch-official {
-    background-image: url("/Assets/MouseyComingForYa.gif");     
-    min-height: 400px;
-}
-    
 </style>
 </head>
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top w3-large">
+<div class="w3-top w3-large w3-animate-top">
   <div class="w3-bar w3-black w3-hover-black"  id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
@@ -72,7 +46,6 @@ body, html {
       
       <div class="w3-left w3-container">
         <a href="#home" class="w3-bar-item w3-button">HOME</a>
-        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
         <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
         <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
       </div>
@@ -98,7 +71,6 @@ body, html {
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
       
    <div class="w3-xlarge w3-center w3-bar-block w3-container w3-bar-item">
@@ -118,29 +90,53 @@ body, html {
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-padding-64" style="margin-left: 10%; margin-right: 10%;" id="portfolio">
+<div class="w3-padding-32 w3-animate-opacity" style="margin-left: 10%; margin-right: 10%;" id="portfolio">
   <h3 class="w3-center">MY WORK</h3>
   <p class="w3-center"><em>Here are some of my latest works in chronological order from latest to oldest.<br></em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m6">
+  <div class="w3-row-padding w3-center w3-section">      
+  <a href="Pages/Volley_PS.html">
+      <div class="w3-col m6 w3-border w3-black w3-padding w3-container w3-animate-left" width="100%" height="167">
+         <div class= "w3-padding"  width= "80%" align="center">
+            <img src="Assets/VolleyMedia/VolleySystem_UML.png" width= "80%" align="center" class="w3-image" object-fit="cover">
+        </div>
+          <div class="w3-padding">
+              <b>Volley Particle System</b>
+          </div>
+      </div>
+  </a>
+
+  <a href="Pages/OpenGL_Engine.html">
+    <div class="w3-col m6 w3-border w3-black w3-padding w3-animate-right" width="100%" height="167">
+         <div class= "w3-padding"  width= "80%" align="center" >
+            <img src="Assets/VolleyMedia/Volley.gif" align="center" class="w3-image" object-fit="cover"> 
+        </div>
+          <div class="w3-padding">
+              <b>OpenGL Graphics Engine</b>
+          </div>
+      </div>
+  </a>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">      
+    <div class="w3-col m6 w3-animate-left">
       <iframe frameborder="0" src="https://itch.io/embed/722018?bg_color=080815&amp;fg_color=eeeeee&amp;link_color=fa5c5c&amp;border_color=363636" width="100%" height="167">
           <a href="https://arcaid.itch.io/ols">One Last Shot: Post Jam by Arc</a></iframe>
     </div>
 
-    <div class="w3-col m6">
+    <div class="w3-col m6 w3-animate-right">
       <iframe frameborder="0" src="https://itch.io/embed/563058?bg_color=080815&amp;fg_color=eeeeee&amp;link_color=fa5c5c&amp;border_color=363636" width="100%" height="167">
           <a href="https://arcaid.itch.io/jojo-3310">Jojo 3310 by Arc</a></iframe>
     </div>
   </div>
 
   <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m6">
+    <div class="w3-col m6 w3-animate-left">
      <iframe frameborder="0" src="https://itch.io/embed/750656?bg_color=080815&amp;fg_color=eeeeee&amp;link_color=fa5c5c&amp;border_color=363636" width="100%" height="167"><a href="https://arcaid.itch.io/modbars">Modular Bars Asset Demo by Arc</a></iframe>
     </div>
 
-    <div class="w3-col m6">
+    <div class="w3-col m6 w3-animate-right">
         <iframe frameborder="0" src="https://itch.io/embed/573950?bg_color=080815&amp;fg_color=eeeeee&amp;link_color=fa5c5c&amp;border_color=363636" width="100%" height="167">
         <a href="https://arcaid.itch.io/hole">Hole New Game by Arc</a></iframe>
     </div>
@@ -155,13 +151,15 @@ body, html {
     
 </div>
 
+    <!--
+
 <div align="center" class="w3-content">
   <iframe frameborder="1" src="https://itch.io/embed-upload/2758580?color=271b1a" allowfullscreen="0" width="100%" height="650"><a href="https://arcaid.itch.io/modbars">Play Modular Bars Asset Demo on itch.io</a></iframe>
 </div>
 
     
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
+<div class="w3-content w3-container w3-padding-64 w3-animate-opacity" id="about">
   <h3 class="w3-center">ABOUT ME</h3>
   <p class="w3-center"><em>Welcome inside my brain.</em></p>
  <!-- <p>Have you ever felt like there's a </p> -->
@@ -199,7 +197,7 @@ body, html {
 -->
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
+<div class="w3-content w3-container w3-padding-64 w3-animate-opacity" id="contact">
   <h3 class="w3-center">WHERE I LIVE</h3>
   <p class="w3-center"><em>No mustard on my Hotdog please!</em></p>
 
