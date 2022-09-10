@@ -12,7 +12,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
     
 h3 {
     text-decoration: underline;
-    
+    text-decoration-style: double;
 }
     
 body, html {
@@ -88,8 +88,9 @@ body, html {
 </div>
 
         
-<div class="w3-content w3-center w3-image" style="padding-top:32px" id="top">  
-        <h3>Volley Particle System</h3>
+<div class="w3-content w3-center" style="padding-top:32px" id="top">  
+        <h3>Volley Particle System</h3> 
+        <p style="color:yellowgreen; align-self: center;">Graduate Research Project</p>
         <img src="../Assets/VolleyMedia/FireWorksv3_c.gif" class="w3-image w3-animate-zoom">
 </div>
 
@@ -115,9 +116,15 @@ body, html {
 </div>
     
 <div class="w3-content w3-row-padding w3-animate-left w3-padding w3-margin-top w3-border">
-    <div class="w3-col m6 w3-container" style="width:50%; padding-top: 64px">
+    <div class="w3-col m6 w3-container" style="padding-top: 64px">
         <ul>
-            <li>sfsafsa</li>
+            <b>Some of the Design Patterns used:</b>
+            <li>Template Pattern for Controller overrides</li>
+            <li>Abstract Pattern for pooling and DLink lists</li>
+            <li>Command pattern for composition</li>
+            <li>Flyweight for particles of course</li>
+            <li>Iterator Pattern</li>
+            <li>Object pooling</li>
         </ul>
     </div>
     <div class="w3-col m6 w3-padding">
@@ -131,12 +138,9 @@ body, html {
     <div class="w3-col m6 w3-padding">
         <img src="../Assets/VolleyMedia/DecayingSphere.gif" class= "w3-image" onclick="onClick(this)">
     </div>
-    <div class="w3-col m6 w3-container" style="width:50%; padding-top: 64px">
+    <div class="w3-col m6 w3-container" style="padding-top: 64px">
         <ul>
-            <li>Multiple HLSL shaders: Flat Color, Textured, Lit Texture, Toon etc.</li>
-            <li>Added primitive 3D Models: Plane, Sphere, Cube, Cylinder and Cone.</li>
-            <li>A Terrain system generation by reading a height map texture.</li>
-            <li>Dynamic Phong lighting with multi-lights support, a mirror effect using multi pass rendering and fog effect.</li>
+           
         </ul>
     </div>
     
@@ -147,7 +151,7 @@ body, html {
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+  <div class="w3-animate-zoom w3-center w3-transparent w3-padding-32">
     <img id="img01" class="w3-image">
     <p id="caption" class="w3-opacity w3-large"></p>
   </div>
