@@ -12,7 +12,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
  
 h3 {
     text-decoration: underline;
-    
+    font-weight: 600;
 }
 body, html {
   height: 100%;
@@ -42,7 +42,7 @@ body, html {
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top w3-large w3-animate-top">
+<div class="w3-top w3-large">
   <div class="w3-bar w3-black w3-hover-black"  id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
@@ -94,42 +94,82 @@ body, html {
   </div>
 </div>
 
+    
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64 w3-animate-opacity" id="about">
+  <h3 class="w3-center">Arpit Sharma</h3>
+  <p class="w3-center"><em>Game Developer Software Engineer.</em></p>
+ <!-- <p>Have you ever felt like there's a </p> -->
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large w3-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Arpit Sharma</b></p><br>
+      <!--<img src="Assets/VolleyMedia/.gif" class="w3-round w3-image" alt="Photo of Me" width="500" >-->
+    </div>
 
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <p>Yeah, this needs some better design, shouldn't my name be on top anyways.. I am definitely not a web developer, if you have a job for web developer, you better be paying me over $100 per hour or I'm not doing it. uhhh web games though.. time to make html text based game engine!</p>
+    </div>
+  </div>
+
+</div>
+    
+    
     
 <!-- Container (Portfolio Section) -->
 <div class="w3-padding-32 w3-animate-opacity" style="margin-left: 10%; margin-right: 10%;" id="portfolio">
   <h3 class="w3-center">MY WORK</h3>
   <p class="w3-center"><em>Here are some of my latest works in chronological order from latest to oldest.<br></em></p><br>
-
-    
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-<div class="w3-row-padding w3-center w3-section">      
+<div class="w3-row-padding w3-center w3-section" >
     <a href="Pages/Volley_PS.html">
-        <div class="w3-col w3-padding m6 w3-animate-left" >
-            <div class="w3-black w3-border" width="100%" height="200px">
-          <div class="w3-padding">
-                <img src="Assets/VolleyMedia/VolleySystem_UML.png" class="w3-image" style="max-height: 350px; min-height: 200px">
-            </div>
-                <div class="w3-padding">
-                  <b>Volley Particle System</b>
+      <div class="w3-animate-left">
+        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" > <!--style="max-width:800px"> -->
+                    <div class= "w3-row w3-padding" style=" vertical-align: middle; max-height: 350px; width=100%;">
+                      
+                        <img src="Assets/VolleyMedia/ParticlesBlastWaves.gif" class="w3-col m6 w3-image w3-border" style="padding-top: 25px; padding-bottom: 25px; max-height: 350px; min-height: 200px;">
+                       
+                        <div class="w3-col m6" style="width:50%; height: 100%;">
+                            <div class="w3-padding">
+                                <h4><b>Volley Particle System</b></h4>
+                            </div>
+                            <ul class="" style="text-align: left;">
+                                <li>C++</li>
+                                <li>OpenGL</li>
+                                <li>Architecture</li>
+                                <li>research</li>
+                                <li>documented</li>
+                                <li>Optimized</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-      </div>
-    </div>
-    </a>
-
-  <a href="Pages/OpenGL_Engine.html">
-      <div class="w3-padding w3-col m6 w3-animate-right">
-        <div class="w3-border w3-black" width="100%"> <!--style="max-width:800px"> -->
-             <div class= "w3-padding" style=" vertical-align: middle; max-height: 350px;">
-                <img src="Assets/BatmanScene/EmbraceTheDarkness.gif" class="w3-image" style="max-height: 350px; min-height: 200px"> 
             </div>
-              <div class="w3-padding">
-                  <b>OpenGL Graphics Engine</b>
-              </div>
-          </div>
-      </div>
-  </a>
-  </div>
+    </a>
+    
+  <a href="Pages/OpenGL_Engine.html">
+      <div class="w3-animate-right">
+        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" > <!--style="max-width:800px"> -->
+                    <div class= "w3-row w3-padding" style=" vertical-align: middle; max-height: 350px; width=100%;">
+                        <img src="Assets/BatmanScene/EmbraceTheDarkness.gif" class="w3-col m6 w3-image w3-border" style=" padding-top: 0px; padding-bottom: 0px; max-height: 350px; min-height: 200px;">
+                        <div class="w3-col m6" style="width:50%; height: 100%;">
+                            <div class="w3-padding">
+                              <h4><b>OpenGL Graphics Engine</b></h4>
+                            </div>
+                            <ul class="" style="text-align: left;">
+                                <li>C++</li>
+                                <li>OpenGL</li>
+                                <li>Architecture</li>
+                                <li>research</li>
+                                <li>documented</li>
+                                <li>Crime</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </a>
+</div>
 
   <div class="w3-row-padding w3-center w3-section">      
     <div class="w3-col m6 w3-animate-left">
@@ -170,26 +210,6 @@ body, html {
   <iframe frameborder="1" src="https://itch.io/embed-upload/2758580?color=271b1a" allowfullscreen="0" width="100%" height="650"><a href="https://arcaid.itch.io/modbars">Play Modular Bars Asset Demo on itch.io</a></iframe>
 </div>
 
-    
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64 w3-animate-opacity" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>Welcome inside my brain.</em></p>
- <!-- <p>Have you ever felt like there's a </p> -->
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large w3-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Arpit Sharma</b></p><br>
-      <img src="Assets/VolleyMedia/DeathCube.gif" class="w3-round w3-image" alt="Photo of Me" width="500" >
-    </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-        <p>Yeah, this needs some better design, shouldn't my name be on top anyways.. I am definitely not a web developer, if you have a job for web developer, you better be paying me over $100 per hour or I'm not doing it. uhhh web games though.. time to make html text based game engine!</p>
-    </div>
-  </div>
-
-</div>
-    
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
@@ -242,7 +262,7 @@ body, html {
 
 <!-- Footer -->
 <footer class="w3-center w3-padding-top-64 w3-opacity w3-hover-opacity-off">
-  <a href="#portfolio" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#about" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
     
 
     
