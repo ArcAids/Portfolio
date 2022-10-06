@@ -87,7 +87,7 @@ body, html {
         
 <div align="center" class="w3-content">
     <a href="https://arcaid.itch.io/batman?password=DSJKyPxuJZ29jg6">
-        <img src="../Assets/BatmanScene/EmbraceTheDarkness.gif">
+        <img src="../Assets/BatmanScene/EmbraceTheDarkness.gif" class="w3-image">
     </a>
 </div>
 
@@ -96,17 +96,68 @@ body, html {
 <div class="w3-padding-64 w3-content" id="portfolio">
   <h3 class="w3-center">DirectX11 Graphics Engine</h3>
   <p class="w3-left">A Graphics Engine I made from scratch for SE-576. It is a DirectX11 based API with dynamic lighting using phong illumination model and support to import 3D meshes from custom binary file.<br></p><br>
-<ul>
-    <li>Multiple HLSL shaders: Flat Color, Textured, Lit Texture, Toon etc.</li>
-    <li>Added primitive 3D Models: Plane, Sphere, Cube, Cylinder and Cone.</li>
-    <li>A Terrain system generation by reading a height map texture.</li>
-    <li>Dynamic Phong lighting with multi-lights support, a mirror effect using multi pass rendering and fog effect.</li>
-</ul>
 
+    <ul>
 
+    </ul>
+
+</div>
+
+<div class="w3-padding w3-content" >
+    <b>Engine Features:</b>
 </div>
     
 
+<div class="w3-content w3-row-padding w3-animate-left w3-padding w3-margin-top w3-border">
+    <div class="w3-col m4 w3-padding">
+         <img src="../Assets/BatmanScene/BlueLight.png" class= "w3-image" onclick="onClick(this)" >
+    </div>
+     <div class="w3-col m4 w3-padding">
+        <ul>
+            <li>Multiple HLSL shaders: Flat Color, Textured, Lit Texture, Toon, Fog etc.</li>
+            <li>In-built primitive 3D Models: Plane, Sphere, Cube, Cylinder and Cone.</li>
+        </ul>
+        </div>
+    <div class="w3-col m4 w3-padding">
+         <img src="../Assets/BatmanScene/shapes.png" class= "w3-image" onclick="onClick(this)" >
+    </div>
+    
+</div>
+
+
+<div class="w3-content w3-row-padding w3-animate-right w3-padding w3-margin-top w3-border">
+    <div class="w3-col m4 w3-padding">
+         <img src="../Assets/BatmanScene/BatmanAndStorm.png" class= "w3-image" onclick="onClick(this)" >
+    </div>
+       <div class="w3-col m4 w3-padding">
+        <ul>
+            <li>Phong lighting with multi-lights support: Point, Spot and Global</li>
+            <li>Devil may Cry reference that no one got.</li>
+            <li>Multi-Mesh models with unique texture per mesh support.</li>
+        </ul>
+        </div>
+    <div class="w3-col m4 w3-padding">
+         <img src="../Assets/BatmanScene/MultiTextureMesh.gif" class= "w3-image" onclick="onClick(this)" >
+    </div>
+    
+</div>
+
+<div class="w3-content w3-row-padding w3-animate-left w3-padding w3-margin-top w3-border">
+    <div class="w3-col m4 w3-padding">
+         <img src="../Assets/BatmanScene/Mirror.gif" class= "w3-image" onclick="onClick(this)" >
+    </div>
+    
+    <div class="w3-col m4 w3-padding">
+        <ul>
+            <li>A mirror effect using multi pass rendering.</li>
+            <li>A Terrain system generation by reading a black and white height map texture.</li>
+        </ul>
+    </div>
+    <div class="w3-col m4 w3-padding">
+         <img src="../Assets/BatmanScene/Terrain.png" class= "w3-image" onclick="onClick(this)" >
+    </div>
+    
+</div>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
