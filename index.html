@@ -7,39 +7,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
- 
-h3 {
-    text-decoration: underline;
-    font-weight: 600;
-}
-body, html {
-  height: 100%;
-  color: #0af;
-  background-color: #010110;
-  line-height: 1.8;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-.itchPlug{
-     max-width:800px; width:100%; height:167px;
-}
-
-
-    
-    
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-    
-</style>
+<link rel="stylesheet" href="Pages/design.css">
+  
 </head>
 <body>
 
@@ -100,35 +69,25 @@ body, html {
 
     
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64 w3-animate-opacity" id="about">
+<div class="w3-content w3-container w3-animate-opacity" style="padding-top: 70px" id="about">
   <h3 class="w3-center">ARPIT (Arc) SHARMA</h3>
   <p class="w3-center"><em>Game Developer Software Engineer.</em></p>
- <!-- <p>Have you ever felt like there's a </p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large w3-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Arpit Sharma</b></p><br>
-    </div>
-      <!--<img src="Assets/VolleyMedia/.gif" class="w3-round w3-image" alt="Photo of Me" width="500" >-->
 
-    <!-- Hide this text on small devices -->
-<br>
     <div class="w3-padding-large">
-        <p>
-            I am Arpit(also referred as "Arc" by some). I am a DePaul University's Grad Adventurer with Game Programming Role. However, It all started a long time ago in far lands of India where I pursued BS in Software Engineering even before realizing I can use this new power and knowledge to make the very games I grew up playing!
-
+        <p style="color:aliceblue;">
+            I am Arpit Sharma(AKA Arc), a game programming graduate adventurer, most interested in Graphics and Systems programming.
 <br>
 <br>
             My Game dev journey began with Unity and in almost 2 years I was already a master in the Unity realm with a <a href="https://assetstore.unity.com/packages/tools/gui/modular-bars-179746" target="_blank">UI bar tool</a> on Unity Asset Store and a couple of games on Play store and <a href="https://arcaid.itch.io/" target="_blank">itch.io</a> but that wasn't enough to quench my thirst for knowledge!
             
-            <br>
-            <br>
+<br>
+<br>
             
             I decided to travel across seas to learn the arts of Game Programming from the Great Sages at DePaul where I've been leveling up my C++ skills along with some Unreal magic at DePaul's Original Game Studio for quite some while now.
             
 <br>
 <br>
-            which brought me here, all prepared and ready for a real adventure with some battle hardened Elites!
-            <b>Graduating this November!</b>
+            which brings us here, with me all prepared and ready for an adventure with the Elites.
         </p>
     </div>
   </div>    
@@ -136,246 +95,137 @@ body, html {
  
     
 <!-- Container (Portfolio Section) -->
-<div class="w3-padding-32 w3-animate-opacity" style="margin-left: 10%; margin-right: 10%;" id="portfolio">
+<div class="w3-animate-opacity" style="margin-left: 10%; margin-right: 10%;" id="portfolio">
   <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest works in chronological order from latest to oldest.<br></em></p><br>
+  <p class="w3-center"><em>Here are some of the projects that I am proud of:<br></em></p><br>
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
 <div class="w3-row-padding w3-center w3-section" >
-    <a href="Pages/Volley_PS.html">
-      <div class="w3-animate-left">
+    <div class="w3-animate-left">
         <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" > <!--style="max-width:800px"> -->
-                    <div class= "w3-row w3-padding" style=" vertical-align: middle; max-height: 350px; width=100%;">
-                      
-                        <img src="Assets/VolleyMedia/ParticlesStill.gif" class="w3-col m6 w3-image w3-border w3-hide-medium" style="padding-top: 25px; padding-bottom: 25px; max-height: 350px; min-height: 200px;">
-                       
-                        <div class="w3-col m6  w3-show-large w3-hide-medium w3-hide-small" style="width:50%; height: 100%;">
-                            <div class="w3-padding">
-                                <h4><b>Volley Particle System</b></h4>
-                            </div>
-                            <div class="w3-row">
-                                <ul class="w3-col m6" style="text-align: left;">
-                                    <li>Optimized C++</li>
-                                    <li>OpenGL</li>
-                                    <li>Architecture</li>
-                                    <li>Research paper</li>
-                                    <li>GLSL</li>
-                                    <li>Perlin Noise</li>
-                                </ul>
-                                <ul class="w3-col m6" style="text-align: left;">
-                                    <li>Component Based</li>
-                                    <li>Custom Math Utilities</li>
-                                    <li>Debug UI</li>
-                                    <li>Fireworks!</li>
-                                </ul>
-                            </div> 
-                        </div>
-                       
-                        <div class="w3-col m6 w3-hide-large w3-show-small" style="width:100%; height: 100%;">
-                            <div class="w3-padding">
-                                <h4><b>Volley Particle System</b></h4>
-                            </div>
-                            <div class="w3-row">
-                                <ul class="w3-col m6" style="text-align: left;">
-                                    <li>Optimized C++</li>
-                                    <li>OpenGL</li>
-                                    <li>Architecture</li>
-                                    <li>Research paper</li>
-                                    <li>GLSL</li>
-                                    <li>Perlin Noise</li>
-                                </ul>
-                                <ul class="w3-col m6" style="text-align: left;">
-                                    <li>Component Based</li>
-                                    <li>Custom Math Utilities</li>
-                                    <li>Debug UI</li>
-                                    <li>Fireworks!</li>
-                                </ul>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </a>
+            <a href="Pages/Volley_PS.html">
+                    <img src="Assets/VolleyMedia/ParticlesStill.gif" class="w3-image w3-padding w3-border" style="height:250px; width: auto;">
+                    <h4 class="w3-padding"><b>Volley Particle System</b></h4>
+            </a>
+                <div style="padding-bottom:10px">A flexible particle system research project in OpenGL.</div>
+                 <table style="text-align: left; width: 100%;">
+                <tr>
+                    <td><li>Optimized C++</li></td>
+                    <td><li>Component Based</li></td>
+                </tr>
+                <tr>
+                    <td><li>OpenGL</li></td>
+                    <td><li>Custom Math Utilities</li></td>
+                </tr>
+                <tr>
+                    <td><li>Architecture</li></td>
+                    <td><li>Debug UI</li></td>
+                </tr>
+                    <td><li>Research paper</li></td>
+                    <td><li>Fireworks!</li></td>
+                <tr>
+                    <td><li>Perlin Noise</li></td>
+                    <td><li>GLSL</li></td>
+                </tr>
+            </table> 
+        </div>
+    </div>
     
-  <a href="Pages/DirectX_Engine.html">
-      <div class="w3-animate-right">
+    <div class="w3-animate-right">
         <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" > <!--style="max-width:800px"> -->
-                    <div class= "w3-row w3-padding" style=" vertical-align: middle; max-height: 350px; width=100%;">
-                        <img src="Assets/BatmanScene/EmbraceTheDarkness.gif" class="w3-col m6 w3-image w3-border w3-hide-medium" style=" padding-top: 0px; padding-bottom: 0px; max-height: 350px; min-height: 200px;">
-                        <div class="w3-col m6  w3-show-large w3-hide-medium w3-hide-small" style="width:50%; height: 100%;">
-                            <div class="w3-padding">
-                              <h4><b>DirectX11 Graphics Engine</b></h4>
-                            </div>
-                            <div class="w3-row">
-                                <ul class="w3-col m6" style="text-align: left;">
-                                    <li>C++</li>
-                                    <li>DirectX 11</li>
-                                    <li>Terrain Generation</li>
-                                    <li>HLSL Shaders</li>
-                                    <li>Phong Lighting</li>
-                                    <li>Primitive Meshes</li>
-                                </ul>
-                                <ul class="w3-col m6" style="text-align: left;">
-                                    <li>Fog shader</li>
-                                    <li>Mirror Shader</li>
-                                    <li>loading Meshes</li>
-                                    <li>Sky Box</li>
-                                    <li>nana x8</li>
-                                    <li>Batman!</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="w3-col m6 w3-hide-large w3-show-small" style="width:100%; height: 100%;">
-                            <div class="w3-padding">
-                              <h4><b>DirectX11 Graphics Engine</b></h4>
-                            </div>
-                            <div class="w3-row">
-                                <ul class="w3-col m6" style="text-align: left;">
-                                    <li>C++</li>
-                                    <li>DirectX 11</li>
-                                    <li>Terrain Generation</li>
-                                    <li>HLSL Shaders</li>
-                                    <li>Phong Lighting</li>
-                                    <li>Primitive Meshes</li>
-                                </ul>
-                                <ul class="w3-col m6" style="text-align: left;">
-                                    <li>Fog shader</li>
-                                    <li>Mirror Shader</li>
-                                    <li>loading Meshes</li>
-                                    <li>Sky Box</li>
-                                    <li>nana x8</li>
-                                    <li>Batman!</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </a>
-</div>
-    <!--
-<div class="w3-row-padding w3-center w3-section" >
-    <a href="Pages/OpenGL_Engine.html">
-      <div class="w3-animate-left">
-        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" > 
-                    <div class= "w3-row w3-padding" style=" vertical-align: middle; max-height: 350px; width=100%;">
-                      
-                        <img src="Assets/OpenGLEngine/MouseyDoneWithYa.gif" class="w3-col m6 w3-image w3-border w3-hide-medium" style="padding-top: 25px; padding-bottom: 25px; max-height: 350px; min-height: 200px;">
-                       
-                         <div class="w3-col m6  w3-show-large w3-hide-medium w3-hide-small" style="width:50%; height: 100%;">
-                            <div class="w3-padding">
-                                <h4><b>OpenGL Skinning Engine</b></h4>
-                            </div>
-                            <div class="w3-row">
-                                <ul class="w3-col m6" style="text-align: left;">
-                                    <li>Optimized C++</li>
-                                    <li>OpenGL</li>
-                                    <li>GLSL</li>
-                                    <li>Compute Shaders</li>
-                                    <li>skinned animation</li>
-                                    <li>smooth transitions</li>
-                                </ul>
-                                <ul class="w3-col m6" style="text-align: left;">
-                                    <li>glb conversion tool</li>
-                                    <li>UI/Sprite support</li>
-                                    <li>Custom Math Library</li>
-                                    <li>Debug UI</li>
-                                    <li>Dancing Mousey!</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                       <div class="w3-col m6 w3-hide-large w3-show-small" style="width:100%; height: 100%;">
-                            <div class="w3-padding">
-                                <h4><b>OpenGL Skinning Engine</b></h4>
-                            </div>
-                            <div class="w3-row">
-                                <ul class="w3-col m6" style="text-align: left;">
-                                    <li>Optimized C++</li>
-                                    <li>OpenGL</li>
-                                    <li>GLSL</li>
-                                    <li>Compute Shaders</li>
-                                    <li>skinned animation</li>
-                                    <li>smooth transitions</li>
-                                </ul>
-                                <ul class="w3-col m6" style="text-align: left;">
-                                    <li>glb conversion tool</li>
-                                    <li>UI/Sprite support</li>
-                                    <li>Custom Math Library</li>
-                                    <li>Debug UI</li>
-                                    <li>Dancing Mousey!</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        
-                    </div>
-                </div>
-            </div>
-    </a>
+            <a href="Pages/DirectX_Engine.html">
+                <img src="Assets/BatmanScene/EmbraceTheDarkness.gif" class="w3-image w3-padding w3-border" style="height:250px">
+                <h4 class="w3-padding"><b>DirectX3D Graphics Engine</b></h4>
+            </a>
+                <div style="padding-bottom:10px">DirectX11 Graphics API made from scratch.</div>
+              <table style="text-align: left; width: 100%;">
+                <tr>
+                    <td><li>C++</li></td>
+                    <td><li>DirectX 11</li></td>
+                </tr>
+                <tr>
+                    <td><li>Terrain Generation</li></td>
+                    <td><li>Sky Box</li></td>
+                </tr>
+                <tr>
+                    <td><li>HLSL Shaders</li></td>
+                    <td><li>loading Meshes</li></td>
+                </tr>
+                    <td><li>Phong Lighting</li></td>
+                    <td><li>Mirror Shader</li></td>
+                <tr>
+                    <td><li>Primitive Meshes</li></td>
+                    <td><li>Fog shader</li></td>
+                </tr>
+            </table>    
+        </div>
+    </div>
     
-    <a href="Pages/Bloopers.html">
-      <div class="w3-animate-right">
-        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" >
-                    <div class= "w3-row w3-padding" style=" vertical-align: middle; max-height: 350px; width=100%;">
-                        <img src="Assets/BatmanScene/EmbraceTheDarkness.gif" class="w3-col m6 w3-image w3-border w3-hide-medium" style="padding-top: 25px; padding-bottom: 25px; max-height: 350px; min-height: 200px;">
-                       
-                        
-                       <div class="w3-col m6  w3-show-large w3-hide-medium w3-hide-small" style="width:50%; height: 100%;">
-                            <div class="w3-padding">
-                              <h4><b>Bloopers</b></h4>
-                            </div>
-                            <div class="w3-row">
-                                <ul class="w3-col m6" style="text-align: left;">
-                                    <li>C++</li>
-                                    <li>DirectX 11</li>
-                                    <li>Terrain Generation</li>
-                                    <li>HLSL Shaders</li>
-                                    <li>Phong Lighting</li>
-                                    <li>Primitive Meshes</li>
-                                </ul>
-                                <ul class="w3-col m6" style="text-align: left;">
-                                    <li>Fog shader</li>
-                                    <li>Mirror Shader</li>
-                                    <li>loading Meshes</li>
-                                    <li>Sky Box</li>
-                                    <li>nanananananana</li>
-                                    <li>Batman!</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                       <div class="w3-col m6 w3-hide-large w3-show-small" style="width:100%; height: 100%;">
-                            <div class="w3-padding">
-                              <h4><b>Bloopers</b></h4>
-                            </div>
-                            <div class="w3-row">
-                                <ul class="w3-col m6" style="text-align: left;">
-                                    <li>C++</li>
-                                    <li>DirectX 11</li>
-                                    <li>Terrain Generation</li>
-                                    <li>HLSL Shaders</li>
-                                    <li>Phong Lighting</li>
-                                    <li>Primitive Meshes</li>
-                                </ul>
-                                <ul class="w3-col m6" style="text-align: left;">
-                                    <li>Fog shader</li>
-                                    <li>Mirror Shader</li>
-                                    <li>loading Meshes</li>
-                                    <li>Sky Box</li>
-                                    <li>nanananananana</li>
-                                    <li>Batman!</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        
-                    </div>
-                </div>
-            </div>
-        </a>
 </div>
- -->
-  <div class="w3-row-padding w3-center w3-section">      
+    
+    
+<div class="w3-row-padding w3-center w3-section" >    
+     <div class="w3-animate-left">
+        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" > <!--style="max-width:800px"> -->
+           <!-- <a href="Pages/OpenGL_Engine.html"> -->
+                <img src="Assets/OpenGLEngine/MouseyDoneWithYa.gif" class="w3-image w3-padding w3-border" style="height:250px">
+                <h4 class="w3-padding"><b>OpenGL Skinning Engine</b></h4>
+            <!--</a>-->
+                <div style="padding-bottom:10px">Hybrid 2D/3D engine with Skinned Blended animations</div>
+            
+              <table style="text-align: left; width: 100%;">
+                <tr>
+                    <td><li>Optimized C++</li></td>
+                    <td><li>skinned animation</li></td>
+                </tr>
+                <tr>
+                    <td><li>OpenGL</li></td>
+                    <td><li>GLSL Compute Shaders</li></td>
+                </tr>
+                <tr>
+                    <td><li>smooth transitions</li></td>
+                    <td><li>Debug UI</li></td>
+                </tr>
+                    <td><li>Custom Math Library</li></td>
+                    <td><li>Occlusion culling</li></td>
+                <tr>
+                    <td><li>glb conversion tool</li></td>
+                    <td><li>UI/Sprite support</li></td>
+                </tr>
+            </table> 
+        </div>
+    </div>
+    
+    <div class="w3-animate-right">
+        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" > <!--style="max-width:800px"> -->
+           <!-- <a href="Pages/OpenGL_Engine.html"> -->
+                <img src="Assets/BarrageParticles/Duck%20Mousey.gif" class="w3-image w3-padding w3-border" style="height:250px">
+                <h4 class="w3-padding"><b>Barrage Particle System</b></h4>
+            <!--</a>-->
+                <div style="padding-bottom:10px">GPU Particles running on multiple compute shader pass.</div>
+            
+              <table style="text-align: left; width: 100%;">
+                <tr>
+                    <td><li>Optimized C++</li></td>
+                    <td><li>simulated particles</li></td>
+                </tr>
+                <tr>
+                    <td><li>OpenGL</li></td>
+                    <td><li>Compute Shaders</li></td>
+                </tr>
+                <tr>
+                    <td><li>Mesh Spawner</li></td>
+                    <td><li>GPU Instanced Draw</li></td>
+                </tr>
+                    <td><li>GPU Computation</li></td>
+                    <td><li>Debug UI</li></td>
+            </table> 
+        </div>
+    </div>
+    
+</div>
+
+    
+<div class="w3-row-padding w3-center w3-section">      
     <div class="w3-col m6 w3-animate-left">
       <iframe frameborder="0" src="https://itch.io/embed/722018?bg_color=080815&amp;fg_color=eeeeee&amp;link_color=fa5c5c&amp;border_color=363636" class="itchPlug">
           <a href="https://arcaid.itch.io/ols">One Last Shot: Post Jam by Arc</a></iframe>
@@ -407,7 +257,7 @@ body, html {
     -->
     
 </div>
--->
+
     <!--
 
 <div align="center" class="w3-content">
@@ -440,7 +290,7 @@ body, html {
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
+      <div class="w3-large w3-margin">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
           <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Phone: <a href="tel:5554280940">+1 (616) 796-5295</a><br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: <a href="mailto:Arpit.Develops@Gmail.com">Arpit.Develops@gmail.com</a><br>
@@ -467,19 +317,19 @@ body, html {
     
        
     <div class="w3-content w3-center w3-border w3-padding" style="color:Orange;">
-    <a style="color: Red">Note:</a> the portfolio is still under work since I'm busy with:
+    <a style="color: Red">Note:</a> the portfolio is still under work. Projects to add:
         <div align="left">
             <li>
-                Optimized Multithreading <a style="color: aliceblue">(Graduate Course)</a>
+                Optimized Multithreading: Maze solver and Audio Engine paper.
             </li>
             <li>
-                Research-2 on Compute Shader Particles <a style="color: aliceblue">(Graduate Course)</a>
+                Angry birds with self made Box2D physics API
             </li>
             <li>
-                Objective system in Unreal 5 <a style="color: aliceblue">(DePaul Original Game Studio work)</a>
+                Space Invaders in C# using OpenGL and software architectures.
             </li>
             <li>
-                Figuring out how to center div <a style="color: aliceblue">(Agile Portfolio!)</a>
+                Multiplayer Omega Race: Networking project over UDP with Dead-Reckoning and Client-side-prediction.
             </li>
         </div>
         But it's all going great, It will get there slowly in couple iterations.

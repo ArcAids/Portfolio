@@ -7,33 +7,9 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-    
-h3 {
-    text-decoration: underline;
-    text-decoration-style: double;
-}
-    
-body, html {
-  height: 100%;
-  color: #0af;
-  background-color: #010110;
-  line-height: 1.8;
-}
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
+<link rel="stylesheet" href="design.css">
     
-</style>
 </head>
 <body height="100%">
 
@@ -143,26 +119,30 @@ body, html {
     <div class="w3-col m6 w3-padding">
         <img src="../Assets/VolleyMedia/DecayingSphere.gif" class= "w3-image" onclick="onClick(this)">
     </div>
-    <div class="w3-col m6 w3-container" style="padding-top: 64px; width:50%; height: 100%;">
+    <div class="w3-col m6 w3-container" style="text-align: center; vertical-align: middle">
             <div class="w3-padding">
                 <h4><b>Volley Particle System</b></h4>
             </div>
-            <div class="w3-row">
-                <ul class="w3-col m6" style="text-align: left;">
-                    <li>Optimized C++</li>
-                    <li>OpenGL</li>
-                    <li>Architecture</li>
-                    <li>Research paper</li>
-                    <li>GLSL</li>
-                    <li>Perlin Noise</li>
-                </ul>
-                <ul class="w3-col m6" style="text-align: left;">
-                    <li>Component Based</li>
-                    <li>Custom Math Utilities</li>
-                    <li>Debug UI</li>
-                    <li>Fireworks!</li>
-                </ul>
-            </div> 
+            <table style="text-align: left; width: 100%;">
+                <tr>
+                    <td><li>Optimized C++</li></td>
+                    <td><li>Component Based</li></td>
+                </tr>
+                <tr>
+                    <td><li>OpenGL</li></td>
+                    <td><li>Custom Math Utilities</li></td>
+                </tr>
+                <tr>
+                    <td><li>Architecture</li></td>
+                    <td><li>Debug UI</li></td>
+                </tr>
+                    <td><li>Research paper</li></td>
+                    <td><li>Fireworks!</li></td>
+                <tr>
+                    <td><li>Perlin Noise</li></td>
+                    <td><li>GLSL</li></td>
+                </tr>
+            </table> 
     </div>
     
 </div>
