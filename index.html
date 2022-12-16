@@ -8,65 +8,16 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="Pages/design.css">
-  
+<script src="Pages/myscripts.js"></script>
 </head>
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top w3-large">
-  <div class="w3-bar w3-black w3-hover-black"  id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-  <div class="w3-padding w3-content">
-      
-      <div class="w3-left w3-container">
-        <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-        <a href="./Assets/MSResume_Updated.pdf" target="_blank"
-           class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-drivers-license"></i> RESUME</a>
-      </div>
-    
-    <div class="w3-xlarge w3-right w3-container w3-bar-item w3-hide-small">
-        <a href="https://arcaid.itch.io/" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-          <img src="https://static.itch.io/images/itchio-textless-white.svg" max height="30" class="w3-hover-opacity"> </a>
-        <a href="https://github.com/arcaids" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" max height="30"> </a>
-        <a href="https://twitter.com/ArcAids" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-          <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/9/9f/Twitter_bird_logo_2012.svg/640px-Twitter_bird_logo_2012.svg.png" max height="30"> </a>
-        <a href="https://www.linkedin.com/in/arcaids/" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" max height="30"> </a>
-        <a href="mailto:Arpit.Develops@Gmail.com" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mail_%28iOS%29.svg/2048px-Mail_%28iOS%29.svg.png" max height="30"> </a>
-       
-      </div>
-      
-    </div>
-      
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="./Assets/MSResume_Updated.pdf" target="_blank" onclick="toggleFunction()"
-           class="w3-bar-item w3-button"><i class="fa fa-drivers-license"></i> RESUME</a>
-      
-   <div class="w3-xlarge w3-center w3-bar-block w3-container w3-bar-item">
-    <a href="https://arcaid.itch.io/" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-      <img src="https://static.itch.io/images/itchio-textless-white.svg" max height="30" class="w3-hover-opacity"> </a>
-    <a href="https://github.com/arcaids" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" max height="30"> </a>
-    <a href="https://twitter.com/ArcAids" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-      <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/9/9f/Twitter_bird_logo_2012.svg/640px-Twitter_bird_logo_2012.svg.png" max height="30"> </a>
-    <a href="https://www.linkedin.com/in/arcaids/" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" max height="30"> </a>
-    <a href="mailto:Arpit.Develops@Gmail.com" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mail_%28iOS%29.svg/2048px-Mail_%28iOS%29.svg.png" max height="30"> </a>
-       
-   </div>
-  </div>
+<div w3-include-html="Pages/Header.html">
 </div>
-
+<script>
+    includeHTML();
+</script>
     
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-animate-opacity" style="padding-top: 70px" id="about">
@@ -102,7 +53,7 @@
 <div class="w3-row-padding w3-center w3-section" >
     
     <div class="w3-animate-left">
-        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" > <!--style="max-width:800px"> -->
+        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px"> <!--style="max-width:800px"> -->
            <!-- <a href="Pages/OpenGL_Engine.html"> -->
                 <img src="Assets/OpenGLEngine/MouseyDoneWithYa.gif" class="w3-image w3-padding w3-border" style="height:250px">
                 <h4 class="w3-padding"><b>OpenGL Skinning Engine</b></h4>
@@ -133,7 +84,7 @@
     </div>
     
     <div class="w3-animate-right">
-        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" > <!--style="max-width:800px"> -->
+        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px"> <!--style="max-width:800px"> -->
             <a href="Pages/DirectX_Engine.html">
                 <img src="Assets/BatmanScene/EmbraceTheDarkness.gif" class="w3-image w3-padding w3-border" style="height:250px">
                 <h4 class="w3-padding"><b>DirectX3D Graphics Engine</b></h4>
@@ -169,7 +120,7 @@
 <div class="w3-row-padding w3-center w3-section" >    
     
       <div class="w3-animate-left">
-        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" > <!--style="max-width:800px"> -->
+        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px"> <!--style="max-width:800px"> -->
             <a href="Pages/Volley_PS.html">
                     <img src="Assets/VolleyMedia/ParticlesStill.gif" class="w3-image w3-padding w3-border" style="height:250px; width: auto;">
                     <h4 class="w3-padding"><b>Volley Particle System</b></h4>
@@ -197,7 +148,7 @@
     </div>
     
     <div class="w3-animate-right">
-        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" > <!--style="max-width:800px"> -->
+        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px"> <!--style="max-width:800px"> -->
             <a href="https://github.com/ArcAids/Portfolio/blob/main/Assets/BarrageParticles/BarrageResearch.md" target="_blank">
                 <img src="Assets/BarrageParticles/Duck%20Mousey.gif" class="w3-image w3-padding w3-border" style="height:250px">
                 <h4 class="w3-padding"><b>Barrage Particle System</b></h4>
@@ -229,7 +180,7 @@
     
     
      <div class="w3-animate-left">
-        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" > <!--style="max-width:800px"> -->
+        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px"> <!--style="max-width:800px"> -->
            <a href="https://github.com/ArcAids/Portfolio/blob/main/Assets/MultiThreading/Multithreaded%20Maze%20Paper.md" target="_blank">
                 <img src="Assets/MultiThreading/Maze%20Solver.png" class="w3-image w3-padding w3-border" style="height:250px">
                 <h4 class="w3-padding"><b>Multi Threading</b></h4>
@@ -238,8 +189,8 @@
             
               <table style="text-align: left; width: 100%;">
                 <tr>
-                    <td><li>multithreaded C++</li></td>
-                    <td><li>inter-thread communication</li></td>
+                    <td><li>Multithreaded C++</li></td>
+                    <td><li>Inter-thread communication</li></td>
                 </tr>
                 <tr>
                     <td><li>Future/Promise</li></td>
@@ -258,12 +209,12 @@
     </div>
     
      <div class="w3-animate-right">
-        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" > <!--style="max-width:800px"> -->
-           <!-- <a href="Pages/OpenGL_Engine.html"> -->
+        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px"> <!--style="max-width:800px"> -->
+            <a href="https://youtu.be/oz5CUwNcMoo?list=PLUrv3_XPK776fey1xVsWpAyzapHPSD39r" target="_blank">
                 <img src="Assets/OmegaRace/Networked.png" class="w3-image w3-padding w3-border" style="height:250px">
                 <h4 class="w3-padding"><b>Game Networking</b></h4>
-            <!--</a>-->
-                <div style="padding-bottom:10px">Added network capabilities to a local multiplayer game on UDP.</div>
+                </a>
+                <div style="padding-bottom:10px">Made a local multiplayer game networked on UDP.</div>
             
               <table style="text-align: left; width: 100%;">
                 <tr>
@@ -272,14 +223,14 @@
                 </tr>
                 <tr>
                     <td><li>UDP/TCP</li></td>
-                    <td><li>Client-Server architecture</li></td>
+                    <td><li>Client-Server Arch.</li></td>
                 </tr>
                 <tr>
                     <td><li>Dead reckoning</li></td>
                     <td><li>Client Side prediction</li></td>
                 </tr>
                 <tr>
-                    <td><li>Serialization / Deserialization</li></td>
+                    <td><li>De/Serialization</li></td>
                     <td><li>Data driven</li></td>
                 </tr>
             </table> 
@@ -299,6 +250,59 @@
     -->
 </div>
 
+<div class="w3-row-padding w3-center w3-section" >    
+    
+    
+     <div class="w3-animate-left">
+        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px"> <!--style="max-width:800px"> -->
+           <a href="https://www.youtube.com/watch?v=F3Cvwix4e5w&list=PLUrv3_XPK776fey1xVsWpAyzapHPSD39r&index=7" target="_blank">
+                <img src="Assets/Angry%20birds/Ferriswheeeee.gif" class="w3-image w3-padding w3-border" style="height:250px">
+                <h4 class="w3-padding"><b>Angry Birds Physics</b></h4>
+            </a>
+                <div style="padding-bottom:10px">Developed Physics API using Box2D and used it to make Angry birds.</div>
+            
+              <table style="text-align: left; width: 100%;">
+                <tr>
+                    <td><li>C++</li></td>
+                    <td><li>Box2D Physics</li></td>
+                </tr>
+                <tr>
+                    <td><li>Architecture</li></td>
+                    <td><li>Rigidbody objects</li></td>
+                </tr>
+                <tr>
+                    <td><li>Physics Joints</li></td>
+                    <td><li>Collision Matrix</li></td>
+                </tr>
+            </table> 
+        </div>
+    </div>
+    
+     <div class="w3-animate-right">
+        <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px"> <!--style="max-width:800px"> -->
+            <a href="https://github.com/ArcAids/Portfolio/blob/main/Assets/SpaceInvaders/Design%20Documentation.md" target="_blank">
+                <img src="Assets/SpaceInvaders/Thumbnail.png" class="w3-image w3-padding w3-border" style="height:250px">
+                <h4 class="w3-padding"><b>Space Invaders</b></h4>
+                </a>
+                <div style="padding-bottom:10px">Space Invaders clone to practice patterns and architecture.</div>
+            
+              <table style="text-align: left; width: 100%;">
+                <tr>
+                    <td><li>C#</li></td>
+                    <td><li>Architecture</li></td>
+                </tr>
+                <tr>
+                    <td><li>Adapter pattern</li></td>
+                    <td><li>State pattern</li></td>
+                </tr>
+                <tr>
+                    <td><li>Visitor pattern</li></td>
+                    <td><li>Composite pattern</li></td>
+                </tr>
+            </table> 
+        </div>
+    </div>
+</div>
     <div class="w3-center">Personal Projects:</div>
     
 <div class="w3-row-padding w3-center w3-section w3-content" style="margin-left: 10%; margin-right: 10%;">     
@@ -409,7 +413,7 @@
         But it's all going great, It will get there slowly in couple iterations.
     </div>
     
-    
+
     
 <!-- Footer -->
 <footer class="w3-center w3-padding-top-64 w3-opacity w3-hover-opacity-off">
@@ -421,38 +425,6 @@
         All rights reserved. Arpit Sharma 2022
     </div>
 </footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
-    } else {
-        navbar.className = navbar.className.replace("w3-bar w3-card w3-animate-top w3-black", "w3-bar w3-black");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show w3-black";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-
 </body>
 </html>
 

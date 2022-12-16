@@ -8,111 +8,63 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="design.css">
-  
+<script src="myscripts.js"></script>
+
 </head>
 <body height="100%">
     
-    
 <!-- Navbar (sit on top) -->
-<div class="w3-top w3-large">
-  <div class="w3-bar w3-black w3-hover-black"  id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-  <div class="w3-padding w3-content">
-      
-      <div class="w3-left w3-container">
-        <a href="../index.html?#about" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
-        <a href="../index.html?#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-        <a href="./../Assets/MSResume_Updated.pdf" target="_blank"
-           class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-drivers-license"></i> RESUME</a>
-      </div>
-    
-    <div class="w3-xlarge w3-right w3-container w3-bar-item w3-hide-small">
-        <a href="https://arcaid.itch.io/" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-          <img src="https://static.itch.io/images/itchio-textless-white.svg" max height="30" class="w3-hover-opacity"> </a>
-        <a href="https://github.com/arcaids" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" max height="30"> </a>
-        <a href="https://twitter.com/ArcAids" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-          <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/9/9f/Twitter_bird_logo_2012.svg/640px-Twitter_bird_logo_2012.svg.png" max height="30"> </a>
-        <a href="https://www.linkedin.com/in/arcaids/" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" max height="30"> </a>
-        <a href="mailto:Arpit.Develops@Gmail.com" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mail_%28iOS%29.svg/2048px-Mail_%28iOS%29.svg.png" max height="30"> </a>
-       
-      </div>
-      
-    </div>
-      
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
-    <a href="../index.html?#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="./Assets/MSResume_Updated.pdf" target="_blank" onclick="toggleFunction()"
-           class="w3-bar-item w3-button"><i class="fa fa-drivers-license"></i> RESUME</a>
-      
-   <div class="w3-xlarge w3-center w3-bar-block w3-container w3-bar-item">
-    <a href="https://arcaid.itch.io/" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-      <img src="https://static.itch.io/images/itchio-textless-white.svg" max height="30" class="w3-hover-opacity"> </a>
-    <a href="https://github.com/arcaids" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" max height="30"> </a>
-    <a href="https://twitter.com/ArcAids" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-      <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/9/9f/Twitter_bird_logo_2012.svg/640px-Twitter_bird_logo_2012.svg.png" max height="30"> </a>
-    <a href="https://www.linkedin.com/in/arcaids/" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" max height="30"> </a>
-    <a href="mailto:Arpit.Develops@Gmail.com" target="_blank" class="fa w3-opacity-max w3-hover-opacity-off">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mail_%28iOS%29.svg/2048px-Mail_%28iOS%29.svg.png" max height="30"> </a>
-       
-   </div>
-  </div>
+<div w3-include-html="Resume.html">
 </div>
+<script>
+    includeHTML();
+</script>
 
-
-<div class="w3-content w3-center" style="padding-top:64px" id="top">  
+<div class="w3-content w3-center" style="padding-top:64px; padding-bottom: 24px" id="top">  
     <h3>OpenGL Skinning Engine</h3> 
     <p style="color:yellowgreen; align-self: center;">Graduate Project</p>
     <video width=100% height="240" autoplay="true" loop="true" muted class="w3-image w3-animate-zoom">
             <source src="../Assets/OpenGLEngine/MouseyTransitions.webm" type="video/webm">
     </video>
-    <p class="w3-left">A Graphics Engine I made from scratch for SE-576. It is a DirectX11 based API with dynamic lighting using phong illumination model and support to import 3D meshes from custom binary file.<br></p><br>
-    <ul style="text-align: left">
-        <li>Multiple HLSL shaders: Flat Color, Textured, Lit Texture, Toon etc.</li>
-        <li>Added primitive 3D Models: Plane, Sphere, Cube, Cylinder and Cone.</li>
-        <li>A Terrain system generation by reading a height map texture.</li>
-        <li>Dynamic Phong lighting with multi-lights support, a mirror effect using multi pass rendering and fog effect.</li>
-    </ul>
+    <p class="w3-left"> OpenGL engine project I worked over a year, adding new features and systems. We also developed a converter project along with it to convert the .glb models into custom protobuffer files to import into the engine.</p>
+    <p></p>
+    <br>
+    <br>
 
 </div>
 
 <div class="w3-content w3-row-padding w3-animate-left w3-padding w3-margin-top w3-border">
     <div class="w3-col m4 w3-padding">
-         <img src="../Assets/OpenGLEngine/BreakDance_Mousey.gif" class= "w3-image" onclick="onClick(this)" >
+         <img src="../Assets/OpenGLEngine/Shader_Model.png" class= "w3-image" style="padding-top: 2px" onclick="onClick(this)" >
     </div>
     
     <div class="w3-col m4 w3-padding">
         <ul>
-            <li>A mirror effect using multi pass rendering.</li>
-            <li>A Terrain system generation by reading a black and white height map texture.</li>
+            <li>In-engine primitive shapes in OpenGL.</li>
+            <li>Multiple shader types included simple lit</li>
+            <li>.GLB 3d-models to protobuffer file cmd-line tool</li>
+            <li>Collision sphere radius calculation</li>
         </ul>
     </div>
+    <div class="w3-col m4 w3-padding">
+        <img src="../Assets/OpenGLEngine/GLBImported.png" class= "w3-image" style="padding-top: 24px" onclick="onClick(this)" >    
+    </div>
+    
+</div>
+
+<div class="w3-content w3-row-padding w3-animate-left w3-padding w3-margin-top w3-border">
     <div class="w3-col m4 w3-padding">
         <video width=100% height="240" autoplay="true" loop="true" muted onclick="onClickVid(this)">
             <source src="../Assets/OpenGLEngine/Mouseys.mp4" type="video/mp4">
         </video>
     </div>
     
-</div>
-
-<div class="w3-content w3-row-padding w3-animate-left w3-padding w3-margin-top w3-border">
-    <div class="w3-col m4 w3-padding">
-         <img src="../Assets/OpenGLEngine/BreakDance_Mousey.gif" class= "w3-image" onclick="onClick(this)" >
-    </div>
-    
     <div class="w3-col m4 w3-padding">
         <ul>
-            <li>A mirror effect using multi pass rendering.</li>
-            <li>A Terrain system generation by reading a black and white height map texture.</li>
+            <li>Skinning on Compute shaders</li>
+            <li>Animation blending on Compute shaders</li>
+            <li>Lossless Animation data compression</li>
+            <li></li>
         </ul>
     </div>
     <div class="w3-col m4 w3-padding">
@@ -147,44 +99,6 @@
         All rights reserved. Arpit Sharma 2022
     </div>
 </footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-function onClickVid(element) {
-  document.getElementById("vidFull").src = element.src;
-  document.getElementById("modal02").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
-    } else {
-        navbar.className = navbar.className.replace("w3-bar w3-card w3-animate-top w3-black", "w3-bar w3-black");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show w3-black";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
 
 </body>
 </html>
