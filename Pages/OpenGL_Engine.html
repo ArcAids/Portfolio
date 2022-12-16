@@ -14,7 +14,7 @@
 <body height="100%">
     
 <!-- Navbar (sit on top) -->
-<div w3-include-html="Resume.html">
+<div w3-include-html="Header.html">
 </div>
 <script>
     includeHTML();
@@ -54,6 +54,26 @@
 
 <div class="w3-content w3-row-padding w3-animate-left w3-padding w3-margin-top w3-border">
     <div class="w3-col m4 w3-padding">
+        <img src="../Assets/OpenGLEngine/ChickenRun.gif" class= "w3-image" style="padding-top: 2px" onclick="onClick(this)" >    
+    </div>
+    
+    <div class="w3-col m4 w3-padding">
+        <ul>
+            <li>Animated game objects</li>
+            <li>Animation controls</li>
+            <li>2D Sprite and UI support</li>
+            <li>Multiple Cameras support</li>
+            <li>Don't mind the broken bot</li>
+        </ul>
+    </div>
+    <div class="w3-col m4 w3-padding">
+        <img src="../Assets/OpenGLEngine/ChickenWings.gif" class="w3-image" onclick="onClick(this)">
+    </div>
+    
+</div>
+
+<div class="w3-content w3-row-padding w3-animate-left w3-padding w3-margin-top w3-border">
+    <div class="w3-col m4 w3-padding">
         <video width=100% height="240" autoplay="true" loop="true" muted onclick="onClickVid(this)">
             <source src="../Assets/OpenGLEngine/Mouseys.mp4" type="video/mp4">
         </video>
@@ -64,7 +84,7 @@
             <li>Skinning on Compute shaders</li>
             <li>Animation blending on Compute shaders</li>
             <li>Lossless Animation data compression</li>
-            <li></li>
+            <li>Haunted mousey</li>
         </ul>
     </div>
     <div class="w3-col m4 w3-padding">
