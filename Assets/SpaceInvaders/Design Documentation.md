@@ -4,6 +4,7 @@
 ---
 
 [![Submission video](https://img.youtube.com/vi/yVpaRq7ckIg/0.jpg)](https://www.youtube.com/watch?v=yVpaRq7ckIg)
+
 Check this video to see the project in action with deep dive on how it works.
 
 ## `Overview`
