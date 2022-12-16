@@ -4,7 +4,7 @@
 ---
 
 [![Submission video](https://img.youtube.com/vi/yVpaRq7ckIg/0.jpg)](https://www.youtube.com/watch?v=yVpaRq7ckIg)
-
+Check this video to see the project in action with deep dive on how it works.
 
 ## `Overview`
 Since the Space invaders is a feature rich already, not to count in all the engine features needed to be added to make it from the ground up such as Lists, iterators, Adapters and so on, If not made with proper planning of architecture things can become a mess in no time.
