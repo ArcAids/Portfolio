@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arc (Hall of Fame)</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="design.css">
+<script src="myscripts.js"></script>
+
+</head>
+<body height="100%">
+    
+<!-- Navbar (sit on top) -->
+<div w3-include-html="Header.html">
+</div>
+<script>
+    includeHTML();
+</script>
+
+<div class="w3-content w3-center" style="padding-top:64px; padding-bottom: 24px" id="top">  
+    <h3>HALL OF FAME</h3> 
+    <p style="color:yellowgreen; align-self: center;">Multiple Projects</p>
+         <img src="../Assets/Angry birds/Ferriswheeeee.gif" class= "w3-image" style="padding-top: 2px" >
+    <p class="w3-left"> Things don't always go as planned and I am also not always professional with my projects. Sometimes it's all just for fun and amusement.
+    </p> 
+    <p>Here are some projects I left incomplete or some bugs that amused me enough that I recorded them.</p>
+    <br>
+
+</div>
+
+<div class="w3-content w3-row-padding w3-animate-left w3-padding w3-margin-top w3-border">
+    <div class="w3-col m4 w3-padding">
+       <img src="../Assets/OpenGLEngine/VerySkinnedBot.gif" class="w3-image" onclick="onClick(this)">
+    </div>
+    
+    <div class="w3-col m4 w3-padding">
+        <ul>
+            <li>Compute shaders are complex.</li>
+            <li>It was some bone miscalculation</li>
+            <li>Some assembly required</li>
+        </ul>
+    </div>
+    <div class="w3-col m4 w3-padding">
+        <img src="../Assets/OpenGLEngine/ChickenWings.gif" class="w3-image" onclick="onClick(this)">
+    </div>
+    
+</div>
+
+<div class="w3-content w3-row-padding w3-animate-left w3-padding w3-margin-top w3-border">
+    <div class="w3-col m4 w3-padding">
+      <img src="../Assets/OpenGLEngine/BreakDance_Mousey.gif" class="w3-image" onclick="onClick(this)">
+    </div>
+    
+    <div class="w3-col m4 w3-padding">
+        <ul>
+            <li>Mousey still haunts my dreams.</li>
+            <li>Needed more work but I did fix him.</li>
+        </ul>
+    </div>
+    <div class="w3-col m4 w3-padding">
+        <video width=100% height="140" autoplay="true" loop="true" muted onclick="onClickVid(this)">
+            <source src="../Assets/OpenGLEngine/Mouseys.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+</div>                      
+
+<div class="w3-content w3-row-padding w3-animate-left w3-padding w3-margin-top w3-border">
+    <div class="w3-col m4 w3-padding">
+       <img src="../Assets/Angry birds/spontaneousCombust.gif" class="w3-image" onclick="onClick(this)">
+    </div>
+    
+    <div class="w3-col m4 w3-padding">
+        <ul>
+            <li>It was just an issue with delta time.</li>
+            <li>huge delta time caused huge gravity acceleration</li>
+            <li>causing collisions.</li>
+        </ul>
+    </div>
+    <div class="w3-col m4 w3-padding">
+        <img src="../Assets/Angry%20birds/Earthquake.gif" class="w3-image" onclick="onClick(this)">
+    </div>
+    
+</div>
+    
+<div class="w3-content w3-row-padding w3-animate-left w3-padding w3-margin-top w3-border">
+    <div class="w3-col m4 w3-padding">
+       <img src="../Assets/BarrageParticles/Ducks.gif" class="w3-image" onclick="onClick(this)">
+    </div>
+    
+    <div class="w3-col m4 w3-padding">
+        <ul>
+            <li>Debugging Compute shaders is not as easy.</li>
+            <li>on right, it's all the different particle groups being rendered with some offset</li>
+            <li>making duck clones.</li>
+            <li>It helped with debugging.</li>
+        </ul>
+    </div>
+    <div class="w3-col m4 w3-padding">
+        <img src="../Assets/BarrageParticles/DuckGroups.png" class="w3-image" onclick="onClick(this)">
+        <img style="padding-top: 5px" src="../Assets/BarrageParticles/Duck.gif" class="w3-image" onclick="onClick(this)">
+    </div>
+    
+</div>
+   
+<div class="w3-content w3-row-padding w3-animate-left w3-padding w3-margin-top w3-border">
+    <div class="w3-col m4 w3-padding">
+       <img src="../Assets/SpaceInvaders/Bug.gif" class="w3-image" onclick="onClick(this)">
+    </div>
+    
+    <div class="w3-col m4 w3-padding">
+        <ul>
+            <li>The credits had a deliberate bug.</li>
+            <li>It was to test the timed event queue system</li>
+            <li>collider groups would mess up when resusing the gameobjects.</li>
+            <li>aliens ending up in different collision group.</li>
+        </ul>
+    </div>
+    <div class="w3-col m4 w3-padding">
+        <img src="../Assets/SpaceInvaders/GameplaySS_BTS.png" class="w3-image" onclick="onClick(this)">
+    </div>
+    
+</div>
+
+<div class="w3-content w3-row-padding w3-animate-left w3-padding w3-margin-top w3-border">
+    <div class="w3-col m4 w3-padding">
+       <img src="../Assets/VolleyMedia/RecursiveChaos.gif" class="w3-image" onclick="onClick(this)">
+    </div>
+    
+    <div class="w3-col m4 w3-padding">
+        <ul>
+            <li>On the left is, spawning sub-particles. Recursively.</li>
+            <li>It does slow down a lot eventually.. no doubt.</li>
+            <li>Sorting particles is computationally heavy.</li>
+            <li>So I did not sort...</li>
+            <li>optimization wasn't the priority but still somewhat needed.</li>
+        </ul>
+    </div>
+    <div class="w3-col m4 w3-padding">
+       <video width=100% height="240" autoplay="true" loop="true" muted onclick="onClickVid(this)">
+            <source src="../Assets/VolleyMedia/UnSortedMess.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+</div>
+    
+<div class="w3-center">
+    <h4 style="color: aqua">To be continued..</h4>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-animate-zoom w3-center w3-transparent w3-padding-32">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+    
+<div id="modal02" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-animate-zoom w3-center w3-transparent w3-padding-32">
+        <video width=100% height="480" autoplay="true" loop="true" muted>
+            <source id="vidFull" src="../Assets/OpenGLEngine/Mouseys.mp4" type="video/mp4">
+        </video>
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-top-64 w3-opacity w3-hover-opacity-off" style="position:relative; bottom:0px; width:100%;">
+    <div class="w3-center w3-margin" style="font-size: 14px; color:white;">
+        All rights reserved. Arpit Sharma 2022
+    </div>
+</footer>
+
+</body>
+</html>
