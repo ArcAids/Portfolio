@@ -5,7 +5,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="Pages/design.css">
 <script src="Pages/myscripts.js"></script>
@@ -20,31 +19,51 @@
 </script>
     
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-animate-opacity" style="padding-top: 70px" id="about">
-  <p style="font-size: 24px" class="w3-center">I am <green>ARPIT (Arc) SHARMA</green>
-    <br>
-    <a style="font-size: 18px"><em>a Game Programmer, Software Engineer.</em></a></p>
+<div class="w3-content w3-row w3-container w3-animate-opacity" style="padding-top: 70px" id="about">
+  <div class="w3-col m8">
+        <p style="font-size: 24px" class="w3-center">I am <green>ARPIT (Arc) SHARMA</green>
+        <br>
+        <a style="font-size: 18px"><em>a Game Programmer, Software Engineer.</em></a></p>
 
-    <div class="w3-padding-large">
-        <p style="color:aliceblue; text-align: center">        
-        Hello, I am Arpit, a passionate game programmer who enjoys aiding the game development by writing flexible and optimized code for the best performance and usability.
-        </p>
+        <div class="w3-padding-large">
+            <p class="alice">        
+            Hello, I am Arpit, a passionate game programmer who enjoys aiding the game development by writing flexible and optimized code for the best performance and usability.
+            </p>
+        </div>
     </div>
-  </div>    
+    <div class="w3-content w3-col m2" style="height: 250px; text-align: center;">
+        <img class="w3-image" style="border-radius: 30%; object-fit: cover; width: 190px; height: 250px; object-position: 0% 20%;" src="Assets/Selfie.jpg" alt="Avatar">
+    </div>
+</div>    
 
         
 <!-- Container (Portfolio Section) 
 <div class="w3-animate-opacity" style="margin-left: 10%; margin-right: 10%;" id="portfolio">
-  <h3 class="w3-center">Technical Skills</h3>
+  <h3 class="heading w3-center">Technical Skills</h3>
   <p class="w3-center"><em>I would not add them here if I was not confident enough:<br></em></p><br>
+        
+    <table style="text-align: left; width:100%; padding: 10px; text-align: c; width: 100%;">
+                <tr>
+                    <td><em>multi-threaded optimized</em> C++</td>
+                    <td>C#</td>
+                    <td>DirectX3D 11</td>
+                </tr>
+                <tr>
+                    <td>OpenGL</td>
+                    <td>DirectX 11</td>
+                    <td>HLSL</td>
+                    <td>GLSL</td>
+                </tr>
+            </table>    
+    
 </div>
 -->
     
     
     
 <!-- Container (Portfolio Section) -->
-<div class="w3-animate-opacity" style="margin-left: 10%; margin-right: 10%;" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
+<div class="w3-animate-opacity" style="padding-top: 32px; margin-left: 10%; margin-right: 10%;" id="portfolio">
+  <h3 class="heading w3-center">MY WORK</h3>
     <p class="w3-center"><em>I specialize in solving, <green>arc</green>hitecturing and implementing elegant solutions to complex problems:<br></em></p><br>
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
 <div class="w3-row-padding w3-center w3-section" >
@@ -53,9 +72,9 @@
         <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px"> <!--style="max-width:800px"> -->
            <a href="Pages/OpenGL_Engine.html">
                 <img src="Assets/OpenGLEngine/MouseyDoneWithYa.gif" class="w3-image w3-padding w3-border" style="height:250px">
-                <h4 class="w3-padding"><b>OpenGL Skinning Engine</b></h4>
+                <h4 class="projectTitle w3-padding"><b>OpenGL Skinning Engine</b></h4>
             </a>
-                <div style="padding-bottom:10px">Hybrid 2D/3D engine with Skinned Blended animations</div>
+                 <div class="description" >Hybrid 2D/3D engine with Skinned Blended animations</div>
             
               <table style="text-align: left; width: 100%;">
                 <tr>
@@ -84,9 +103,9 @@
         <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px"> <!--style="max-width:800px"> -->
             <a href="Pages/DirectX_Engine.html">
                 <img src="Assets/BatmanScene/EmbraceTheDarkness.gif" class="w3-image w3-padding w3-border" style="height:250px">
-                <h4 class="w3-padding"><b>DirectX3D Graphics Engine</b></h4>
+                <h4 class="projectTitle w3-padding"><b>DirectX3D Graphics Engine</b></h4>
             </a>
-                <div style="padding-bottom:10px">DirectX11 Graphics API made from scratch.</div>
+                <div class="description" >DirectX11 Graphics API made from scratch.</div>
               <table style="text-align: left; width:100%; ">
                 <tr>
                     <td><li>C++</li></td>
@@ -120,9 +139,9 @@
         <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px;"> <!--style="max-width:800px"> -->
             <a href="Pages/Volley_PS.html">
                     <img src="Assets/VolleyMedia/ParticlesStill.gif" class="w3-image w3-padding w3-border" style="height:250px; width: auto;">
-                    <h4 class="w3-padding"><b>Volley Particle System</b></h4>
+                    <h4 class="projectTitle w3-padding"><b>Volley Particle System</b></h4>
             </a>
-                <div style="padding-bottom:10px">A flexible particle system research project in OpenGL.</div>
+                 <div class="description" >A flexible particle system research project in OpenGL.</div>
                  <table style="text-align: left; width: 100%;">
                 <tr>
                     <td><li>Optimized C++</li></td>
@@ -148,9 +167,9 @@
         <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px"> <!--style="max-width:800px"> -->
             <a href="https://github.com/ArcAids/Portfolio/blob/main/Assets/BarrageParticles/BarrageResearch.md" target="_blank">
                 <img src="Assets/BarrageParticles/Duck%20Mousey.gif" class="w3-image w3-padding w3-border" style="height:250px">
-                <h4 class="w3-padding"><b>Barrage Particle System</b></h4>
+                <h4 class="projectTitle w3-padding"><b>Barrage Particle System</b></h4>
             </a>
-                <div style="padding-bottom:10px">GPU Particles processed by multiple compute shader passes.</div>
+                 <div class="description" >GPU Particles processed by multiple compute shader passes.</div>
             
               <table style="text-align: left; width: 100%;">
                 <tr>
@@ -180,9 +199,9 @@
         <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px"> <!--style="max-width:800px"> -->
            <a href="https://github.com/ArcAids/Portfolio/blob/main/Assets/MultiThreading/Multithreaded%20Maze%20Paper.md" target="_blank">
                 <img src="Assets/MultiThreading/Maze%20Solver.png" class="w3-image w3-padding w3-border" style="height:250px">
-                <h4 class="w3-padding"><b>Multi Threading</b></h4>
+                <h4 class="projectTitle w3-padding"><b>Multi Threading</b></h4>
             </a>
-                <div style="padding-bottom:10px">Multithreaded Audio Engine and Maze solver</div>
+                 <div class="description" >Multithreaded Audio Engine and Maze solver</div>
             
               <table style="text-align: left; width: 100%;">
                 <tr>
@@ -209,9 +228,9 @@
         <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px"> <!--style="max-width:800px"> -->
             <a href="https://youtu.be/oz5CUwNcMoo?list=PLUrv3_XPK776fey1xVsWpAyzapHPSD39r" target="_blank">
                 <img src="Assets/OmegaRace/Networked.png" class="w3-image w3-padding w3-border" style="height:250px">
-                <h4 class="w3-padding"><b>Game Networking</b></h4>
+                <h4 class="projectTitle w3-padding"><b>Game Networking</b></h4>
                 </a>
-                <div style="padding-bottom:10px">Made a local multiplayer game networked on UDP.</div>
+                <div class="description" >Made a local multiplayer game networked on UDP.</div>
             
               <table style="text-align: left; width: 100%;">
                 <tr>
@@ -243,9 +262,9 @@
         <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px"> <!--style="max-width:800px"> -->
            <a href="https://www.youtube.com/watch?v=F3Cvwix4e5w&list=PLUrv3_XPK776fey1xVsWpAyzapHPSD39r&index=7" target="_blank">
                 <img src="Assets/Angry%20birds/Ferriswheeeee.gif" class="w3-image w3-padding w3-border" style="height:250px">
-                <h4 class="w3-padding"><b>Angry Birds Physics</b></h4>
+                <h4 class="projectTitle w3-padding"><b>Angry Birds Physics</b></h4>
             </a>
-                <div style="padding-bottom:10px">Developed Physics API using Box2D and used it to make Angry birds.</div>
+                 <div class="description" >Developed Physics API using Box2D and used it to make Angry birds.</div>
             
               <table style="text-align: left; width: 100%;">
                 <tr>
@@ -268,9 +287,9 @@
         <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px"> <!--style="max-width:800px"> -->
             <a href="https://github.com/ArcAids/Portfolio/blob/main/Assets/SpaceInvaders/Design%20Documentation.md" target="_blank">
                 <img src="Assets/SpaceInvaders/Thumbnail.png" class="w3-image w3-padding w3-border" style="height:250px">
-                <h4 class="w3-padding"><b>Space Invaders</b></h4>
+                <h4 class="projectTitle w3-padding"><b>Space Invaders</b></h4>
                 </a>
-                <div style="padding-bottom:10px">Space Invaders clone to practice patterns and architecture.</div>
+                <div class="description" >Space Invaders clone to practice patterns and architecture.</div>
             
               <table style="text-align: left; width: 100%;">
                 <tr>
@@ -297,9 +316,9 @@
         <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px"> <!--style="max-width:800px"> -->
            <a href="https://github.com/ArcAids/Portfolio/blob/main/Assets/MultiThreading/Multithreaded%20Maze%20Paper.md" target="_blank">
                 <img src="Assets/MultiThreading/Maze%20Solver.png" class="w3-image w3-padding w3-border" style="height:250px">
-                <h4 class="w3-padding"><b>Multi Threading</b></h4>
+                <h4 class="projectTitle w3-padding"><b>Multi Threading</b></h4>
             </a>
-                <div style="padding-bottom:10px">Multithreaded Audio Engine and Maze solver</div>
+                 <div class="description" >Multithreaded Audio Engine and Maze solver</div>
             
               <table style="text-align: left; width: 100%;">
                 <tr>
@@ -327,9 +346,9 @@
         <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px">
            <a href="Pages/HallOfFame.html">
                 <img src="Assets/OpenGLEngine/BreakDance_Mousey.gif" class="w3-image w3-padding w3-border" style="height:250px">
-                <h4 class="w3-padding"><b>Hall of Shame</b></h4>
+                <h4 class="projectTitle w3-padding"><b>Hall of Shame</b></h4>
            </a>
-            <div style="padding-bottom:10px">The abnormilities found before I eradiacted them. I really enjoy fun visual bugs, I reckon this should be a part of every portfolio!</div>
+             <div class="description" >The abnormilities found before I eradiacted them. I really enjoy fun visual bugs, I reckon this should be a part of every portfolio!</div>
         </div>
     </div>
 </div>
@@ -341,7 +360,7 @@
         <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px">
            <a href="" target="_blank">
                 <img src="Assets/MultiThreading/Maze%20Solver.png" class="w3-image w3-padding w3-border" style="height:250px">
-                <h4 class="w3-padding"><b>Yesterlandia</b></h4>
+                <h4 class="projectTitle w3-padding"><b>Yesterlandia</b></h4>
             </a>
                 <div style="padding-bottom:10px">Engine</div>
             
@@ -371,7 +390,7 @@
         <div class="w3-border w3-padding w3-black w3-left w3-col w3-half" width="100%" style="font-size: 12px">
            <a href="Pages/HallOfFame.html">
                 <img src="Assets/OpenGLEngine/BreakDance_Mousey.gif" class="w3-image w3-padding w3-border" style="height:250px">
-                <h4 class="w3-padding"><b>Hall of Shame</b></h4>
+                <h4 class="projectTitle w3-padding"><b>Hall of Shame</b></h4>
            </a>
             <div style="padding-bottom:10px">The abnormilities found before I eradiacted them. I really enjoy fun visual bugs, I reckon this should be a part of every portfolio!</div>
         </div>
@@ -444,12 +463,13 @@
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64 w3-animate-opacity" id="contact">
-  <h3 class="w3-center">Who am I?</h3>
+  <h3 class="heading w3-center">Who am I?</h3>
   <p class="w3-center"><em>A Game developer adventurer.</em></p>
     <div class="w3-padding-large">
-        <p style="color:aliceblue;">
-<br>
+        <p class="alice">
+
             I am <green>Arpit Sharma(AKA Arc)</green>, recently graduated Summa Cum Laude with a major in Game programming. I enjoy aiding the game development process by keeping my code and tools easy to expand and use.
+<br>
 <br>
             My Game dev journey began with Unity and in almost 2 years I was already a master in the Unity realm with a <a class="link" href="https://assetstore.unity.com/packages/tools/gui/modular-bars-179746" target="_blank">UI bar tool</a> on the Unity Asset Store and a couple of games on the <a class="link" href="https://play.google.com/store/apps/details?id=com.Innotical.Cards&hl=en_US&gl=US" target="_blank">Play store</a> and <a class="link" href="https://arcaid.itch.io/" target="_blank">itch.io</a> but that wasn't enough to quench my thirst for knowledge!
             
@@ -460,13 +480,13 @@
             
 <br>
 <br>
-            this brings us here, with me all prepared and ready for an adventure with the Elites, write some aesthetically pleasing efficient, flexible and resuable code.
+            this brings us here, with me all prepared and ready for an adventure with the Elites to write some efficient, flexible and resuable code.
         </p>
     </div>
     
     <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding w3-animate-opacity" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
+  <h3 class="heading w3-center">CONTACT</h3>
   <p class="w3-center"><em>Feel free to reach out!</em></p>
 
       <div class="w3-row w3-padding-32 w3-section">
@@ -515,7 +535,7 @@
 
     
     <div class="w3-center w3-margin" style="font-size: 14px; color:white;">
-        All rights reserved. Arpit Sharma 2022
+        All rights reserved. Arpit Sharma 2023
     </div>
 </footer>
 </body>

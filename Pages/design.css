@@ -1,12 +1,22 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body,p, div
+{
+    font-family: "Roboto Slab", sans-serif;
+}
   
-h3 {
+i{
+    color: springgreen;
+}
+
+.heading {
+    font-family: "Roboto Slab", sans-serif;
     text-decoration: underline;
     text-decoration-style: double;
 }
-h4 {
+
+.projectTitle {
+    font-family: "Roboto Slab", sans-serif;
+    text-decoration-line: underline;
     color: springgreen;
-    text-decoration-color: springgreen;
 }
 
 green{
@@ -15,9 +25,11 @@ green{
 }
 .link{
   color: #0af;
-    
 }
     
+.alice {
+    color: aliceblue;
+}
 body {
   height: 100%;
   color: #0af;
@@ -27,6 +39,13 @@ body {
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
+
+
+.description{
+  color: #0af;
+    padding-bottom:10px;
+}
+
 
 
 
